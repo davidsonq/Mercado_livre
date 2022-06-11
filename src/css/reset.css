@@ -1,0 +1,26 @@
+body, header, figure, a, img, figcaption, div ,form, fieldset, textarea, button,
+ ul, li, main, section, h1, h2, h3, p, small, span, article, footer , input{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font:inherit;
+    vertical-align: baseline;
+}
+body{
+    line-height: 1;
+}
+ul, ol{
+    list-style: none;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+blockquote, q{
+    quotes: none;
+}
+blockquote::after, blockquote::before, q::after,q::before{
+    content: '';
+    content: none;
+}
