@@ -1,7 +1,10 @@
 body{
-    overflow-x: hidden;
+  
 }
 .cabecalho{
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
     background-color: #fff15b;
     display: flex;
@@ -9,16 +12,25 @@ body{
     justify-content: space-evenly;
 }
 .cabecalho__logo{
+    max-width: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
-.cabecalho__logo a{
+.cabecalho__logo__full{
+    max-width: 100%;
     text-decoration: none;
     
 }
+.cabecalho__logo__full img{
+    max-width: 100%;
+}
+.cabecalho__logo__resoponsive{
+    display: none;
+}
 .cabecalho__logo figcaption{
+    max-width: 100%;
     width: 86px;
     font-size: 12px;
     color: rgba(0,0,0,.5);
@@ -33,17 +45,22 @@ body{
 }
 
 .cabecalho__logo figcaption span{
+    max-width: 100%;
     display: flex;
     align-items: center;
 }
 .cabecalho__logo figcaption strong{
+    max-width: 100%;
     margin-left: 24px;
 }
 .cabecalho__logo figcaption img{
+    max-width: 100%;
     width: 25px;
     height: 25px;
 }
 .cabecalho__form{
+    max-width: 100%;
+    width: 100%;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -54,6 +71,7 @@ body{
     align-items: flex-start;
 }
 .cabecalho__form input{
+    max-width: 100%;
     width: 274px;
     margin-bottom: 20px;
     height: 21px;
@@ -72,6 +90,7 @@ body{
 }
 .cabecalho__form button{
     display: flex;
+    max-width: 100%;
     width: 63px;
     background-color: #fff;
     padding: 4px 15px 6px;
@@ -86,10 +105,11 @@ body{
     height: 26px;
     border-left: 1px solid #e6e6e6;
     display: flex;
-    top: 6.5px;s
+    top: 6.5px;
 }
 
 .cabecalho__form ul{
+    max-width: 100%;
     display:flex;
     justify-content:space-between;
     width:100%;
@@ -110,44 +130,74 @@ body{
 }
 
 .cabecalho__disney{
+    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 72px;
     margin-right: 45px;
 }
-
+.cabecalho__disney figure{
+    display: flex;
+    width: 100%;
+}
 .cabecalho__disney ul{
+    max-width: 100%;
     justify-content: space-evenly;
     width: 100%;
     display: flex;
     align-items: center;
     margin-left: 61px;
+    flex-wrap: wrap;
 }
-
+.cabecalho__disney ul li{
+    display: flex;
+}
 .cabecalho__disney ul li a{
+    display: flex;
     text-decoration: none;
     font-size: 14px;
     color: black;
 }
-
-.cabecalho__disney .disney{
-    margin-bottom: 14px;
-    max-width: 340px;
-    max-height: 39px;
+.cabecalho__disney ul li .hambu{
+   display: none;
 }
-
+.cabecalho__disney .disney{
+    display: flex;
+    max-width: 100%;
+    margin-bottom: 14px;
+    width: 340px;
+    height: 39px;
+}
+.menu{
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+.menu__rolagem{
+    width: 100%;
+}
 .menu__rolagem ul{
     display: flex;
     overflow-x: scroll;
 }
 
+.menu__rolagem ul li {
+    max-width: 100%;
+    
+}
 .menu__rolagem ul li a{
-    width: 100%;
+    display: flex;
+}
+.menu__rolagem ul li a img{
+    object-fit: fill;
+    display: flex;
+    max-height: 100%; 
+    min-width: 100%;
 }
 .menu__rolagemdois{
+    max-width: 100%;
     margin: 50px auto;
-    width: 1200px;
     letter-spacing: 2px;
     font-size: 16px;
     font-weight: 400;
@@ -274,7 +324,6 @@ height: 240px;
 .menu__rolagem3{
     display: flex;
     margin: 50px auto;
-    width: 1200px;
     flex-direction: column;
     align-items: center;
     font-size: 16px;
@@ -284,8 +333,8 @@ height: 240px;
 .menu__rolagem3 a{
     margin-top: 30px;
     object-fit: cover;
-    width:1184px ;
-    height: 165px;
+    width:100% ;
+    max-width: 100%;
     transition: 0.5s;
 }
 .menu__rolagem3 a:hover{
@@ -299,7 +348,6 @@ height: 240px;
 .menu__rolagem4{
     display: flex;
     margin: 50px auto;
-    width: 1200px;
     flex-direction: column;
     align-items: center;
     font-size: 16px;
@@ -307,6 +355,7 @@ height: 240px;
     letter-spacing: 2px;
 }
 .menu__rolagem4 ul{
+    max-width: 100%;
     margin-top: 30px;
     justify-content: space-between;
     display: flex;
@@ -344,7 +393,6 @@ height: 240px;
     letter-spacing: 2px;
 }
 .menu__rolagem5 ul{
-    margin-left: 84px;
     margin-top: 30px;
     overflow-y: hidden;
     width: 100%;
@@ -352,6 +400,9 @@ height: 240px;
     gap: 35px;
     display: flex;
     flex-direction: row;
+}
+.menu__rolagem5 ul li{
+    display: flex;
 }
 .menu__rolagem5 ul li a{
     display: flex;
@@ -362,6 +413,9 @@ height: 240px;
     font-size: 12px;
     font-weight: 400;
     gap: 20px;
+}
+.menu__rolagem5 ul li a img{
+    display: flex;
 }
 .menu__rolagem5 ul li a span{
     text-align: center;
@@ -472,7 +526,6 @@ height: 240px;
     font-size: 14px;
 }
 .menu__rolagem7{
-    width: 1200px;
     margin: 50px auto;
 }
 .menu__rolagem7 a:hover{
@@ -480,21 +533,20 @@ height: 240px;
     transition: 0.5s;
 }
 .menu__rolagem7 a img{
-    width:1184px ;
-    height:165px ;
+    width: 100%;
 }
 .menu__rolagem8{
     margin: 0 auto;
-    width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .menu__rolagem8 ul{
     margin: 50px 0px;
-    width: 1200px;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .menu__rolagem8 ul li a{
     width: 119px;
@@ -508,22 +560,27 @@ height: 240px;
     text-decoration: none;
 }
 .menu__rolagem9{
-    width: 1200px;
     margin: 50px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .menu__rolagem9 ul{
+    width: 100%;
+    flex-wrap: wrap;
     display: flex;
     gap: 15px;
     margin-top: 40px;
 }
 .menu__rolagem9 ul li a{
-    width: 584px;
-    height:165px ;
+    max-width: 100%;
     border-radius: 4px;
     transition: 0.5s;
+}
+.menu__rolagem9 ul li a img{
+    width: 584px;
+    height:165px ;
+    max-width: 100%;
 }
 .menu__rolagem9 ul li a:hover{
     box-shadow: 0 8px 16px 0 rgb(0 0 0 / 10%);
@@ -562,8 +619,12 @@ height: 240px;
     text-decoration: none;
     color: #336cc1;
 }
+.rodape{
+    margin: 0 auto;
+    overflow-x: hidden;
+}
 .rodape__mais{
-    margin: 50px 0px;
+    margin: 50px auto;
     display: flex;
     background-color: #e7e7e7;
     width: 100%;
@@ -583,6 +644,7 @@ height: 240px;
     margin: 20px 32px;
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
 }
 .rodape ul li{
     margin-right: 16px;
@@ -600,3 +662,96 @@ height: 240px;
     flex-direction: column;
 }
 
+@media (max-width:1019px) {
+    .menu__rolagem5 ul{
+        margin-left: 0px;
+    }
+    .cabecalho__disney figure{
+        display: none;
+    }
+    .cabecalho__disney ul{
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-top: 1px;
+        flex-wrap: nowrap;
+    }
+    .cabecalho__disney .media{
+        display: none;
+    }
+    .cabecalho__disney ul li .hambu{
+        display: flex;
+    }
+    .cabecalho__disney ul li .boramedia img{
+        width: 50px;
+    }
+    .cabecalho__form ul{
+        display: none;
+    }
+    .cabecalho__logo{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        max-width: 100%;
+        margin-top: 28px;
+    }
+    .cabecalho__logo__full__img{
+        display: none;
+    }
+    .cabecalho__logo__resoponsive{
+        display: flex;
+    }
+    .cabecalho__logo__resoponsive img{
+        width: 50px;
+    }
+    .cabecalho__logo figcaption{
+        flex-direction: row;
+    }
+}
+@media (max-width:941px) {
+    .cabecalho__form input{
+        padding: 7px 150px 10px 16px;
+    }
+}
+@media (max-width:889px) {
+    .cabecalho__form input{
+        padding: 7px 50px 10px 16px;
+    }
+}
+@media (max-width:798px) {
+    .cabecalho__form input{
+        padding: 7px 0px 10px 16px;
+        width: 224px;
+    }
+}
+@media (max-width:660px) {
+    .cabecalho__form input{
+        padding: 7px 0px 10px 16px;
+        width: 124px;
+    }
+    .cabecalho__disney ul li .boramedia img {
+        width: 50px;
+        max-width: 100%;
+        height: 50px;
+        object-fit: cover;
+    }
+    .cabecalho__logo__resoponsive img {
+        width: 50px;
+        max-width: 100%;
+        object-fit: cover;
+    }
+}
+@media (max-width:465px) {
+    .cabecalho__form input{
+        padding: 7px 0px 10px 16px;
+        width: 74px;
+    }
+    .cabecalho__logo figcaption {
+        display: none;
+    }
+    .cabecalho__logo__resoponsive {
+        display: flex;
+        margin-bottom: 40px;
+        object-fit: cover;
+    }
+}
